@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Score Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <b>✦ SCORE LAB</b>
+    <span>Student Result Management</span>
+</header>
+
+<main>
+
+    <div class="heading">
+        <small>ACADEMIC DASHBOARD</small>
+        <h1>Student <i>Score Lab</i></h1>
+        <p>Enter your details and marks to generate your result.</p>
+    </div>
+
+    <div class="card">
+
+        <h2>Student Profile</h2>
+
+        <form id="studentForm">
+
+            <div class="form">
+                <div>
+                    <label>Student Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+
+                <div>
+                    <label>Roll Number</label>
+                    <input type="text" id="rollNo" placeholder="Enter roll number" required>
+                </div>
+
+                <div>
+                    <label>Email</label>
+                    <input type="email" id="email" placeholder="Enter email" required>
+                </div>
+
+                <div>
+                    <label>Course</label>
+                    <select id="course" required>
+                        <option value="">Select course</option>
+                        <option>MCA</option>
+                        <option>BCA</option>
+                        <option>BSc IT</option>
+                        <option>BSc CS</option>
+                    </select>
+                </div>
+            </div>
+
+            <h2 class="marks-title">Enter Marks</h2>
+
+            <div class="marks">
+
+                <div>
+                    <strong>H</strong>
+                    <label>HTML</label>
+                    <input type="number" id="html" min="0" max="100" placeholder="00" required>
+                    <small>Out of 100</small>
+                </div>
+
+                <div>
+                    <strong>C</strong>
+                    <label>CSS</label>
+                    <input type="number" id="css" min="0" max="100" placeholder="00" required>
+                    <small>Out of 100</small>
+                </div>
+
+                <div>
+                    <strong>JS</strong>
+                    <label>JavaScript</label>
+                    <input type="number" id="javascript" min="0" max="100" placeholder="00" required>
+                    <small>Out of 100</small>
+                </div>
+
+            </div>
+
+            <button type="submit">✦ Calculate Result</button>
+
+        </form>
+    </div>
+
+
+    <div id="resultBox" class="result">
+
+        <div class="result-head">
+            <div>
+                <small>RESULT GENERATED</small>
+                <h2>Your Scorecard</h2>
+            </div>
+
+            <b id="resultStatus">-</b>
+        </div>
+
+        <div class="percentage">
+            <span id="percentage">0%</span>
+            <p>Overall Percentage</p>
+        </div>
+
+        <div class="details">
+            <div>
+                <small>Student</small>
+                <b id="resultName">-</b>
+            </div>
+
+            <div>
+                <small>Roll No.</small>
+                <b id="resultRoll">-</b>
+            </div>
+
+            <div>
+                <small>Course</small>
+                <b id="resultCourse">-</b>
+            </div>
+
+            <div>
+                <small>Total Marks</small>
+                <b id="totalMarks">-</b>
+            </div>
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+    Student Score Lab • HTML5 • CSS3 • JavaScript
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
